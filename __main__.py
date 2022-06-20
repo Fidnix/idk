@@ -4,8 +4,8 @@ def inicio():
     operacion = input("Ingrese la operacion que desea realizar: ")
 
     if operacion == "P":
-        p1 = input("Ingrese la base: ")
-        p2 = input("Ingrese el exponente: ")
+        p1 = int(input("Ingrese la base: "))
+        p2 = int(input("Ingrese el exponente: "))
         potencia_r = potencia.MathMatics.potencia(p1, p2)
 
         print(f"El resultado es {potencia_r}")
@@ -15,5 +15,12 @@ def inicio():
 
         print(f"El resultado es {factorial}")
 
+    elif operacion == "Fi":
+        p1 = int(input("Ingrese el numero de la serie que desea: "))
+        fibo = potencia.MathMatics.fibonacci(p1)
+
+        print(f"EL resultado es {fibo}")
+
 if __name__ == '__main__':
+    print("Hola y bienvenido a este programa para hacer calculos hasicos")
     inicio()
