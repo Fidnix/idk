@@ -42,3 +42,7 @@ class MathMatics:
             suma+= 1/(2**i)
 
         return suma
+
+    @staticmethod
+    def numero_e_aprox(n):
+        return (1+1/(n*1000))**(n*1000)
